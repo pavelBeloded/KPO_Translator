@@ -134,6 +134,7 @@
     <ClCompile Include="Error.cpp" />
     <ClCompile Include="In.cpp" />
     <ClCompile Include="Log.cpp" />
+    <ClCompile Include="Out.cpp" />
     <ClCompile Include="Parm.cpp" />
     <ClCompile Include="SE_Lab14.cpp" />
   </ItemGroup>
@@ -141,6 +142,7 @@
     <ClInclude Include="Error.h" />
     <ClInclude Include="In.h" />
     <ClInclude Include="Log.h" />
+    <ClInclude Include="Out.h" />
     <ClInclude Include="Parm.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
