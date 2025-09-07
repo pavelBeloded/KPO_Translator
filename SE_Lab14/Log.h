@@ -5,7 +5,7 @@
 namespace Log {
 	struct LOG {
 		wchar_t logfile[PARM_MAX_SIZE];
-		std::ofstream* stream;
+		std::ofstream* stream = nullptr;
 	};
 	static const LOG INITLOG{ L"", NULL };
 	LOG getlog(wchar_t logfile[]);

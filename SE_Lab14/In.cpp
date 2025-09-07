@@ -30,6 +30,7 @@ namespace In {
 				throw ERROR_THROW_IN(111, in.lines, pos);
 				break;
 			default:
+				if (c == IN_CODE_ENDL) in.lines++;
 				in.text[pos++] = in.code[c];
 			}
 
