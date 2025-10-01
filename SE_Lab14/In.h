@@ -3,26 +3,24 @@
 #define IN_CODE_ENDL '\n'
 
 #define IN_CODE_TABLE {\
-In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, '|', In::IN::F, In::IN::F, In::IN::I, In::IN::F, In::IN::F,  \
-In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-In::IN::T, In::IN::F, In::IN::T, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::T, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-\
-In::IN::F, In::IN::T, In::IN::T, In::IN::F, In::IN::T, In::IN::T, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::T, In::IN::F, In::IN::F, In::IN::T,  \
-In::IN::T, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::T, In::IN::F, In::IN::I, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-In::IN::F, In::IN::T, In::IN::T, In::IN::F, In::IN::T, In::IN::T, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::T, In::IN::F, In::IN::F, In::IN::T,  \
-In::IN::T, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::T, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-\
-In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-\
-'-', In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
-In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F, In::IN::F,  \
+/* 0–15   */ In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::I,In::IN::I,In::IN::F,In::IN::F,In::IN::I,In::IN::F,In::IN::F, \
+/* 16–31  */ In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F, \
+/* 32–47  */ In::IN::T,In::IN::F,In::IN::T,In::IN::T,In::IN::F,In::IN::F,In::IN::F,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::F,In::IN::F, \
+/* 48–63  */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::F,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::F, \
+/* 64–79  */ In::IN::F,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T, \
+/* 80–95  */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F, \
+/* 96–111 */ In::IN::F,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T, \
+/*112–127 */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::F,In::IN::T,In::IN::F,In::IN::F, \
+/*128–143 */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T, \
+/*144–159 */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T, \
+/*160–175 */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T, \
+/*176–191 */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T, \
+/*192–207 */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T, \
+/*208–223 */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T, \
+/*224–239 */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T, \
+/*240–255 */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T  \
 }
+
 
 
 namespace In {
