@@ -15,6 +15,14 @@ int wmain(int argc, wchar_t* argv[]) {
 		Log::WriteParm(log, parm);
 		In::IN in = In::getin(parm.in);
 		Log::WriteIn(log, in);
+		In::RemoveExtraSpaces(in);
+		//std::cout << in.text;
+
+		LT::LexTable lextable = LT::Create(LT_MAXSIZE);
+		LT::FillLT(lextable, in);
+
+		Log::WriteLT(log, lextable);
+
 		Out::WriteIn(out, in);
 	}
 	catch (Error::ERROR error) {

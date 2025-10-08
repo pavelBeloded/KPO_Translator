@@ -13,7 +13,7 @@ namespace In {
 		int pos = 0;
 		IN in = { 0,0,0, nullptr, IN_CODE_TABLE };
 		in.text = new unsigned char[IN_MAX_LEN_TEXT];
-		int linePos = 0;
+		int linePos = 1;
 		while (!file.eof() && pos < IN_MAX_LEN_TEXT - 1) {
 			unsigned char c = file.get();
 			if (file.eof()) break;
@@ -24,23 +24,23 @@ namespace In {
 				if (c == IN_CODE_ENDL) 
 				{
 					in.lines++;
-					linePos = 0;
+					linePos = 1;
 				}
 				break;
 			case in.I:
 				in.ignore++;
 				if (c == IN_CODE_ENDL) {
 					in.lines++;
-					linePos = 0;
+					linePos = 1;
 				}
 				break;
 			case in.F:
-				throw ERROR_THROW_IN(111, in.lines, linePos);
+				throw ERROR_THROW_IN(111, in.lines + 1, linePos);
 				break;
 			default:
 				if (c == IN_CODE_ENDL) {
 					in.lines++;
-					linePos = 0;
+					linePos = 1;
 				}
 				in.text[pos++] = in.code[c];
 			}

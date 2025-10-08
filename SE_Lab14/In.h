@@ -3,7 +3,7 @@
 #define IN_CODE_ENDL '\n'
 
 #define IN_CODE_TABLE {\
-/* 0–15   */ In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::I,In::IN::I,In::IN::F,In::IN::F,In::IN::I,In::IN::F,In::IN::F, \
+/* 0–15   */ In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::I,'|',In::IN::F,In::IN::F,In::IN::I,In::IN::F,In::IN::F, \
 /* 16–31  */ In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F,In::IN::F, \
 /* 32–47  */ In::IN::T,In::IN::F,In::IN::T,In::IN::T,In::IN::F,In::IN::F,In::IN::F,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::F,In::IN::F, \
 /* 48–63  */ In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::F,In::IN::T,In::IN::T,In::IN::T,In::IN::T,In::IN::F, \

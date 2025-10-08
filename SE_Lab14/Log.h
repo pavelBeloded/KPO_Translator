@@ -1,6 +1,8 @@
 #pragma once
 #include <fstream>
 #include "stdafx.h"
+#include "LT.h"
+#include "IT.h"
 
 namespace Log {
 	struct LOG {
@@ -15,5 +17,7 @@ namespace Log {
 	void WriteParm(LOG log, Parm::PARM parm);
 	void WriteIn(LOG log, In::IN in);
 	void WriteError(LOG log, Error::ERROR error);
+	void WriteIT(LOG log, IT::IdTable& idtable);
+	void WriteLT(LOG log, LT::LexTable& lextable);
 	void Close(LOG log);
 }

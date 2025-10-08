@@ -4,6 +4,10 @@
 #include <cstdarg>
 #include <ctime>
 #include <iostream>
+#include <iomanip>
+
+#define outfile *log.stream
+
 
 namespace Log {
 	LOG getlog(wchar_t logfile[]) {
@@ -107,6 +111,37 @@ namespace Log {
 			}
 		}
 	}
+
+	//void WriteIT(LOG log, IT::IdTable& idtable)
+	//{
+
+	//}
+
+
+
+	void WriteLT(LOG log, LT::LexTable& lextable) {
+		outfile << "---- Таблица лексем ----" << std::endl;
+
+		int size = lextable.size;
+		int lastLine = -1;
+
+		for (int i = 0; i < size; i++) {
+			int currentLine = lextable.table[i].sn;
+
+			if (currentLine != lastLine) {
+				if (i > 0) outfile << std::endl;
+				outfile << std::setfill('0') << std::setw(3) << currentLine << " ";
+				lastLine = currentLine;
+			}
+
+			outfile << lextable.table[i].lexema;
+		}
+
+		outfile << std::endl;
+	}
+
+
+
 
 	void Close(LOG log) {
 		log.stream->close();
