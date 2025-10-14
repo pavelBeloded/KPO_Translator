@@ -1,8 +1,11 @@
 #pragma once
+
+#include "IT.h"
+
 #define LEXEMA_FIXSIZE 1
-#define LT_MAXSIZE 4096
-#define LT_TI_NULLIDX 0xffffffff
-#define LEX_STRING 't'
+#define LT_MAXSIZE 4096 //4096
+#define LT_TI_NULLIDX 0xfffffff
+#define LEX_STRING 's'
 #define LEX_INTEGER 't'
 #define LEX_ID 'i'
 #define LEX_LITERAL 'l'
@@ -61,8 +64,8 @@ namespace LT {
 	void Add(LexTable& lextable, Entry entry);
 	Entry GetEntry(LexTable& lextable, int index);
 	void Delete(LexTable& lextable);
-	void FillLT(LexTable& lextable, In::IN& in);
-	bool isId(std::string word);
-	bool isLiteral(std::string word);
-	char checkForKeyword(std::string word);
+	void FillLTIT(LexTable& lextable, IT::IdTable& idtable, In::IN& in);
+	bool isId(const std::string& word);
+	bool isLiteral(const std::string word);
+	char checkForKeyword(const std::string word);
 }

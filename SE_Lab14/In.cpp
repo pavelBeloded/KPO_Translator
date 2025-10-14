@@ -18,6 +18,7 @@ namespace In {
 			unsigned char c = file.get();
 			if (file.eof()) break;
 			switch (in.code[c]) {
+			case in.S:
 			case in.T:
 				linePos++;
 				in.text[pos++] = c;

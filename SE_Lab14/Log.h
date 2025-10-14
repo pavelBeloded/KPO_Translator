@@ -11,7 +11,7 @@ namespace Log {
 	};
 	static const LOG INITLOG{ L"", NULL };
 	LOG getlog(wchar_t logfile[]);
-	void WriteLine(LOG log, char* c, ...);
+	void WriteLine(LOG log, const char* c, ...);
 	void WriteLine(LOG log, wchar_t* c, ...);
 	void WriteLog(LOG log);
 	void WriteParm(LOG log, Parm::PARM parm);
